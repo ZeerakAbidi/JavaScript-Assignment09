@@ -1637,7 +1637,51 @@ else{
  			CHAPTER 59 - 67
  ----------------------------------------*/
 
+// document.getElementById('chp58').removeAttribute('style','style');
 
+
+//  TASK 01
+
+// var a=document.getElementById("main-content");
+
+//console.log(a.childNodes);
+
+// var b=document.getElementsByClassName("render");
+// for(var i=0; i<b.length; i++){
+//     var a=b[i];
+//     document.write(a.innerHTML+"<br>");
+// }
+                         
+// document.getElementById("first-name").value="Munazza";
+
+// document.getElementById("last-name").value="Siddiqui";
+// document.getElementById("email").value="munazzasiddiqui22@gmail.com";
+
+
+
+//   TASK 02
+
+// var a=document.getElementById("form-content");
+// var b=a.nodeType;
+// alert(b);
+
+//  var c=document.getElementById("lastName");
+// console.log(c.nodeType);
+// console.log(c.childNodes[0]);                       
+
+// var textnode = document.createTextNode("Last Name: John");                                
+// c.replaceChild(textnode, c.childNodes[0]);
+
+// var d=document.getElementById("main-content");
+// console.log(d.firstChild);
+// console.log(d.lastChild);
+
+// console.log(c.nextSibling);
+// console.log(c.previousSibling);
+
+// var e=document.getElementById("email");
+// console.log(e.parentNode);
+// console.log(e.nodeType);
 
 
 
