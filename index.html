@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 09</title>
+</head>
+<body>
+
+<!-- Chp 43 - 48 -->
+<!-- Task 01 -->
+
+<a id="anchor" onclick="alert('Hello World')" style="display:none">Click to open alert</a>
+
+<!-- Chp 43 - 48 -->
+<!-- Task 02 -->
+
+<div id="mobiles" style="display: none;">
+<div id="cell">
+<img src="Mobile1.jpg" class="image" width="375" height="400" onclick="Mobile1()">
+<img src="Mobile2.jpg" class="image" width="500" height="420" onclick="Mobile2()">
+<img src="Mobile3.jpg" class="image" width="333" height="400" onclick="Mobile3()">
+<img src="Mobile4.png" class="image" width="333" height="400" onclick="Mobile4()">
+</div>
+<p>Click image to Know the brand name</p>
+<div>
+
+<!-- Chp 43 - 48 -->
+<!-- Task 03 -->
+
+<table id="myTable" style="display: none;">
+		<tr>
+		<th>Index</th>
+		<th>Name</th>
+		<th>Class</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>Hina</td>
+		<td>7</td>
+		<td><button onclick="DeleteRow(this)">Delete</button></td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Sherry</td>
+		<td>7</td>
+		<td><button onclick="DeleteRow(this)">Delete</button></td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Ali</td>
+		<td>5</td>
+		<td><button onclick="DeleteRow(this)">Delete</button></td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Zainab</td>
+		<td>8</td>
+		<td><button onclick="DeleteRow(this)">Delete</button></td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>Basit</td>
+		<td>9</td>
+		<td><button onclick="DeleteRow(this)">Delete</button></td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>Dawood</td>
+		<td>6</td>
+		<td><button onclick="DeleteRow(this)">Delete</button></td>
+	</tr>
+	<tr>
+		<td>7</td>
+		<td>Sohaib</td>
+		<td>4</td>
+		<td><button onclick="DeleteRow(this)">Delete</button></td>
+	</tr>
+	<tr>
+		<td>8</td>
+		<td>Zaroon</td>
+		<td>10</td>
+		<td><button onclick="DeleteRow(this)">Delete</button></td>
+	</tr>
+	<tr>
+		<td>9</td>
+		<td>Kashaf</td>
+		<td>10</td>
+		<td><button onclick="DeleteRow(this)">Delete</button></td>
+	</tr>
+		<td>10</td>
+		<td>Sajal</td>
+		<td>7</td>
+		<td><button onclick="DeleteRow(this)">Delete</button></td>
+	</tr>
+	<tr>
+		<td>11</td>
+		<td>Zeerak</td>
+		<td>7</td>
+		<td><button onclick="DeleteRow(this)">Delete</button></td>
+	</tr>
+	</tr>
+	
+	</table>
+
+<!-- Chp 43 - 48 -->
+<!-- Task 04 -->
+
+<img onmouseover="changeImg()" onmouseout="normalImg()" border="0" src="water.jpg" width="300" height="200" id="img" style="display: none;">
+
+<!-- Chp 43 - 48 -->
+<!-- Task 05 -->
+
+<h2 id="counter" style="display: none;">0</h2>
+<button id="countPlus" onclick="increase()" style="display: none;">Increase</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button id="countSub" onclick="decrease()" style="display: none;">Decrease</button>
+
+
+
+<!-- Chp 49 - 52 -->
+<!-- Task 02 -->
+
+<p id="para" style="display: none;">
+Lorem ipsum, or lipsum as it is sometimes known,
+<a href="javascript:void(0);" onClick="FullPara();"><em>Show more.</em></a>
+</p>
+
+<!-- Chp 49 - 52 -->
+<!-- Task 03 -->
+
+<div id="tab" style="display: none;">
+<table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+<tr>
+		<th>Index</th>
+		<th>Name</th>
+		<th>Class</th>
+	</tr>
+
+<tr id="row1">
+<td id="index_row1">1</td>
+<td id="name_row1">Zeerak</td>
+<td id="clas_row1">8</td>
+<td>
+<input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+<input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+</td>
+</tr>
+
+<tr id="row2">
+<td id="index_row2">2</td>
+<td id="name_row2">Dawood</td>
+<td id="clas_row2">9</td>
+<td>
+<input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+<input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+</td>
+</tr>
+
+<tr id="row3">
+<td id="index_row3">3</td>
+<td id="name_row3">Hina</td>
+<td id="clas_row3">8</td>
+<td>
+<input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+<input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+</td>
+</tr>
+
+<tr id="row4">
+<td id="index_row4">4</td>
+<td id="name_row4">Zainab</td>
+<td id="clas_row4">7</td>
+<td>
+<input type="button" id="edit_button4" value="Edit" class="edit" onclick="edit_row('4')">
+<input type="button" id="save_button4" value="Save" class="save" onclick="save_row('4')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('4')">
+</td>
+</tr>
+
+<tr id="row5">
+<td id="index_row5">5</td>
+<td id="name_row5">Raza</td>
+<td id="clas_row5">8</td>
+<td>
+<input type="button" id="edit_button5" value="Edit" class="edit" onclick="edit_row('5')">
+<input type="button" id="save_button5" value="Save" class="save" onclick="save_row('5')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('5')">
+</td>
+</tr>
+
+<tr>
+<td><input type="text" id="new_index"></td>
+<td><input type="text" id="new_name"></td>
+<td><input type="text" id="new_clas"></td>
+<td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+</tr>
+
+</table>
+
+<!-- Chp 58 - 67 -->
+<div id="imgHover" style="display: none;">
+<img id="myImg1" src="img_snow.jpg" alt="Snow" style="width:100%;max-width:300px">
+<img id="myImg2" src="water.jpg" alt="WaterFall" style="width:100%;max-width:300px">
+<img id="myImg3" src="forest.jpg" alt="Forest" style="width:100%;max-width:300px">
+<img id="myImg4" src="rock.jpg" alt="RockMountain" style="width:100%;max-width:300px">
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+</div>
+
+<!-- Chp 58 - 67 -->
+<div id="chp58" style="display: none;">
+<h1> DOM </h1>
+<div id="form-content" class="content" style="display: none;">
+<label for="first-name">First Name</label>
+<input type="text" id="first-name" />
+<label for="last-name">Last Name</label>
+<input type="text" id="last-name" />
+<label for="email">Email</label>
+<input type="text" id="email" />
+</div>
+<div id="main-content" class=”content” style="display: none;">
+<p class="render"> First Name : Alex</p>
+<p class="render" id="lastName">Last Name: Bank</p>
+<p class="render"> Email : alexbank@example.com</p>
+<p class="render"> Country : Pakistan </p>
+<p class="render"> contact : +92 300 1234567</p>
+</div>
+</div>
+
+
+
+<script src="app.js"></script>
+</body>
+</html>
+<style type="text/css">
+body {font-family: Arial, Helvetica, sans-serif;}
+#cell{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+  justify-content: space-around;
+}
+#myImg1, #myImg2, #myImg3, #myImg4;  {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#myImg1:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover {opacity: 0.7;}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
